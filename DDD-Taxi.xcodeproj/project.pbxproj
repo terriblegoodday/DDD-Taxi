@@ -8,6 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		77F87C2824AB194200185A3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C2724AB194200185A3F /* main.cpp */; };
+		77F87C3524AB1DCC00185A3F /* StdPresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3324AB1DCC00185A3F /* StdPresenter.cpp */; };
+		77F87C3724AB1E4100185A3F /* UseCase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3624AB1E4100185A3F /* UseCase.cpp */; };
+		77F87C3A24AB4E2400185A3F /* AvailableTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3824AB4E2400185A3F /* AvailableTime.cpp */; };
+		77F87C3D24AB4E3000185A3F /* OrderTaxi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3B24AB4E3000185A3F /* OrderTaxi.cpp */; };
+		77F87C4024AB4E3900185A3F /* GenerateCar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3E24AB4E3900185A3F /* GenerateCar.cpp */; };
+		77F87C4324AB4E4D00185A3F /* RegisterCustomer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C4124AB4E4D00185A3F /* RegisterCustomer.cpp */; };
+		77F87C4A24AB4E9000185A3F /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C4824AB4E9000185A3F /* Car.cpp */; };
+		77F87C4D24AB4E9700185A3F /* CarFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C4B24AB4E9700185A3F /* CarFactory.cpp */; };
+		77F87C5024AB4EA600185A3F /* CarRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C4E24AB4EA600185A3F /* CarRepository.cpp */; };
+		77F87C5324AB4EC700185A3F /* Driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C5124AB4EC700185A3F /* Driver.cpp */; };
+		77F87C5624AB4ED800185A3F /* DriverRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C5424AB4ED800185A3F /* DriverRepository.cpp */; };
+		77F87C5924AB4F2000185A3F /* DriverFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C5724AB4F2000185A3F /* DriverFactory.cpp */; };
+		77F87C5D24AB4F3400185A3F /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C5B24AB4F3400185A3F /* Time.cpp */; };
+		77F87C6124AB4F9100185A3F /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C5F24AB4F9100185A3F /* Customer.cpp */; };
+		77F87C6424AB4F9F00185A3F /* CustomerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C6224AB4F9F00185A3F /* CustomerFactory.cpp */; };
+		77F87C6724AB4FAA00185A3F /* CustomerRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C6524AB4FAA00185A3F /* CustomerRepository.cpp */; };
+		77F87C6A24AB4FBC00185A3F /* Order.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C6824AB4FBC00185A3F /* Order.cpp */; };
+		77F87C6D24AB4FC600185A3F /* OrderFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C6B24AB4FC600185A3F /* OrderFactory.cpp */; };
+		77F87C7024AB4FDB00185A3F /* OrderAggregate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C6E24AB4FDB00185A3F /* OrderAggregate.cpp */; };
+		77F87C7324AB4FE800185A3F /* OrderRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C7124AB4FE800185A3F /* OrderRepository.cpp */; };
+		77F87C7A24AB504A00185A3F /* DriverMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C7824AB504A00185A3F /* DriverMemory.cpp */; };
+		77F87C7D24AB505400185A3F /* CarMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C7B24AB505400185A3F /* CarMemory.cpp */; };
+		77F87C8024AB505F00185A3F /* CustomerMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C7E24AB505F00185A3F /* CustomerMemory.cpp */; };
+		77F87C8324AB506B00185A3F /* OrderMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C8124AB506B00185A3F /* OrderMemory.cpp */; };
+		77F87C8B24AB533800185A3F /* DDD_Taxi_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C8A24AB533800185A3F /* DDD_Taxi_UnitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +50,68 @@
 /* Begin PBXFileReference section */
 		77F87C2424AB194200185A3F /* DDD-Taxi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DDD-Taxi"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F87C2724AB194200185A3F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		77F87C3224AB19A900185A3F /* Presenter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Presenter.hpp; sourceTree = "<group>"; };
+		77F87C3324AB1DCC00185A3F /* StdPresenter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StdPresenter.cpp; sourceTree = "<group>"; };
+		77F87C3424AB1DCC00185A3F /* StdPresenter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StdPresenter.hpp; sourceTree = "<group>"; };
+		77F87C3624AB1E4100185A3F /* UseCase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UseCase.cpp; sourceTree = "<group>"; };
+		77F87C3824AB4E2400185A3F /* AvailableTime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AvailableTime.cpp; sourceTree = "<group>"; };
+		77F87C3924AB4E2400185A3F /* AvailableTime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AvailableTime.hpp; sourceTree = "<group>"; };
+		77F87C3B24AB4E3000185A3F /* OrderTaxi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrderTaxi.cpp; sourceTree = "<group>"; };
+		77F87C3C24AB4E3000185A3F /* OrderTaxi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrderTaxi.hpp; sourceTree = "<group>"; };
+		77F87C3E24AB4E3900185A3F /* GenerateCar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GenerateCar.cpp; sourceTree = "<group>"; };
+		77F87C3F24AB4E3900185A3F /* GenerateCar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GenerateCar.hpp; sourceTree = "<group>"; };
+		77F87C4124AB4E4D00185A3F /* RegisterCustomer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RegisterCustomer.cpp; sourceTree = "<group>"; };
+		77F87C4224AB4E4D00185A3F /* RegisterCustomer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RegisterCustomer.hpp; sourceTree = "<group>"; };
+		77F87C4824AB4E9000185A3F /* Car.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Car.cpp; sourceTree = "<group>"; };
+		77F87C4924AB4E9000185A3F /* Car.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Car.hpp; sourceTree = "<group>"; };
+		77F87C4B24AB4E9700185A3F /* CarFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CarFactory.cpp; sourceTree = "<group>"; };
+		77F87C4C24AB4E9700185A3F /* CarFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CarFactory.hpp; sourceTree = "<group>"; };
+		77F87C4E24AB4EA600185A3F /* CarRepository.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CarRepository.cpp; sourceTree = "<group>"; };
+		77F87C4F24AB4EA600185A3F /* CarRepository.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CarRepository.hpp; sourceTree = "<group>"; };
+		77F87C5124AB4EC700185A3F /* Driver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Driver.cpp; sourceTree = "<group>"; };
+		77F87C5224AB4EC700185A3F /* Driver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Driver.hpp; sourceTree = "<group>"; };
+		77F87C5424AB4ED800185A3F /* DriverRepository.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DriverRepository.cpp; sourceTree = "<group>"; };
+		77F87C5524AB4ED800185A3F /* DriverRepository.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DriverRepository.hpp; sourceTree = "<group>"; };
+		77F87C5724AB4F2000185A3F /* DriverFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DriverFactory.cpp; sourceTree = "<group>"; };
+		77F87C5824AB4F2000185A3F /* DriverFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DriverFactory.hpp; sourceTree = "<group>"; };
+		77F87C5B24AB4F3400185A3F /* Time.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
+		77F87C5C24AB4F3400185A3F /* Time.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Time.hpp; sourceTree = "<group>"; };
+		77F87C5F24AB4F9100185A3F /* Customer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
+		77F87C6024AB4F9100185A3F /* Customer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Customer.hpp; sourceTree = "<group>"; };
+		77F87C6224AB4F9F00185A3F /* CustomerFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerFactory.cpp; sourceTree = "<group>"; };
+		77F87C6324AB4F9F00185A3F /* CustomerFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CustomerFactory.hpp; sourceTree = "<group>"; };
+		77F87C6524AB4FAA00185A3F /* CustomerRepository.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerRepository.cpp; sourceTree = "<group>"; };
+		77F87C6624AB4FAA00185A3F /* CustomerRepository.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CustomerRepository.hpp; sourceTree = "<group>"; };
+		77F87C6824AB4FBC00185A3F /* Order.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Order.cpp; sourceTree = "<group>"; };
+		77F87C6924AB4FBC00185A3F /* Order.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Order.hpp; sourceTree = "<group>"; };
+		77F87C6B24AB4FC600185A3F /* OrderFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrderFactory.cpp; sourceTree = "<group>"; };
+		77F87C6C24AB4FC600185A3F /* OrderFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrderFactory.hpp; sourceTree = "<group>"; };
+		77F87C6E24AB4FDB00185A3F /* OrderAggregate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrderAggregate.cpp; sourceTree = "<group>"; };
+		77F87C6F24AB4FDB00185A3F /* OrderAggregate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrderAggregate.hpp; sourceTree = "<group>"; };
+		77F87C7124AB4FE800185A3F /* OrderRepository.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrderRepository.cpp; sourceTree = "<group>"; };
+		77F87C7224AB4FE800185A3F /* OrderRepository.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrderRepository.hpp; sourceTree = "<group>"; };
+		77F87C7824AB504A00185A3F /* DriverMemory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DriverMemory.cpp; sourceTree = "<group>"; };
+		77F87C7924AB504A00185A3F /* DriverMemory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DriverMemory.hpp; sourceTree = "<group>"; };
+		77F87C7B24AB505400185A3F /* CarMemory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CarMemory.cpp; sourceTree = "<group>"; };
+		77F87C7C24AB505400185A3F /* CarMemory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CarMemory.hpp; sourceTree = "<group>"; };
+		77F87C7E24AB505F00185A3F /* CustomerMemory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerMemory.cpp; sourceTree = "<group>"; };
+		77F87C7F24AB505F00185A3F /* CustomerMemory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CustomerMemory.hpp; sourceTree = "<group>"; };
+		77F87C8124AB506B00185A3F /* OrderMemory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrderMemory.cpp; sourceTree = "<group>"; };
+		77F87C8224AB506B00185A3F /* OrderMemory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrderMemory.hpp; sourceTree = "<group>"; };
+		77F87C8824AB533800185A3F /* DDD-Taxi-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DDD-Taxi-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F87C8A24AB533800185A3F /* DDD_Taxi_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDD_Taxi_UnitTests.m; sourceTree = "<group>"; };
+		77F87C8C24AB533800185A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		77F87C2124AB194200185A3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F87C8524AB533800185A3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				77F87C2624AB194200185A3F /* DDD-Taxi */,
+				77F87C8924AB533800185A3F /* DDD-Taxi-UnitTests */,
 				77F87C2524AB194200185A3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				77F87C2424AB194200185A3F /* DDD-Taxi */,
+				77F87C8824AB533800185A3F /* DDD-Taxi-UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +142,178 @@
 		77F87C2624AB194200185A3F /* DDD-Taxi */ = {
 			isa = PBXGroup;
 			children = (
+				77F87C3124AB197900185A3F /* Infrastructure */,
+				77F87C3024AB196200185A3F /* Domain */,
+				77F87C2F24AB195900185A3F /* Application */,
+				77F87C2E24AB194C00185A3F /* Presentation */,
 				77F87C2724AB194200185A3F /* main.cpp */,
 			);
 			path = "DDD-Taxi";
+			sourceTree = "<group>";
+		};
+		77F87C2E24AB194C00185A3F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C3224AB19A900185A3F /* Presenter.hpp */,
+				77F87C3324AB1DCC00185A3F /* StdPresenter.cpp */,
+				77F87C3424AB1DCC00185A3F /* StdPresenter.hpp */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		77F87C2F24AB195900185A3F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C3624AB1E4100185A3F /* UseCase.cpp */,
+				77F87C3824AB4E2400185A3F /* AvailableTime.cpp */,
+				77F87C3924AB4E2400185A3F /* AvailableTime.hpp */,
+				77F87C3B24AB4E3000185A3F /* OrderTaxi.cpp */,
+				77F87C3C24AB4E3000185A3F /* OrderTaxi.hpp */,
+				77F87C3E24AB4E3900185A3F /* GenerateCar.cpp */,
+				77F87C3F24AB4E3900185A3F /* GenerateCar.hpp */,
+				77F87C4124AB4E4D00185A3F /* RegisterCustomer.cpp */,
+				77F87C4224AB4E4D00185A3F /* RegisterCustomer.hpp */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		77F87C3024AB196200185A3F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C5E24AB4F8600185A3F /* OrderAggregate */,
+				77F87C5A24AB4F2A00185A3F /* Time */,
+				77F87C4724AB4E7C00185A3F /* Car */,
+				77F87C4624AB4E7600185A3F /* Driver */,
+				77F87C4524AB4E7000185A3F /* Customer */,
+				77F87C4424AB4E6B00185A3F /* Order */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		77F87C3124AB197900185A3F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C7724AB503500185A3F /* DriverMemory */,
+				77F87C7624AB503000185A3F /* CarMemory */,
+				77F87C7524AB502A00185A3F /* CustomerMemory */,
+				77F87C7424AB502300185A3F /* OrderMemory */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		77F87C4424AB4E6B00185A3F /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C6824AB4FBC00185A3F /* Order.cpp */,
+				77F87C6924AB4FBC00185A3F /* Order.hpp */,
+				77F87C6B24AB4FC600185A3F /* OrderFactory.cpp */,
+				77F87C6C24AB4FC600185A3F /* OrderFactory.hpp */,
+				77F87C7124AB4FE800185A3F /* OrderRepository.cpp */,
+				77F87C7224AB4FE800185A3F /* OrderRepository.hpp */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		77F87C4524AB4E7000185A3F /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C5F24AB4F9100185A3F /* Customer.cpp */,
+				77F87C6024AB4F9100185A3F /* Customer.hpp */,
+				77F87C6224AB4F9F00185A3F /* CustomerFactory.cpp */,
+				77F87C6324AB4F9F00185A3F /* CustomerFactory.hpp */,
+				77F87C6524AB4FAA00185A3F /* CustomerRepository.cpp */,
+				77F87C6624AB4FAA00185A3F /* CustomerRepository.hpp */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		77F87C4624AB4E7600185A3F /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C5124AB4EC700185A3F /* Driver.cpp */,
+				77F87C5224AB4EC700185A3F /* Driver.hpp */,
+				77F87C5424AB4ED800185A3F /* DriverRepository.cpp */,
+				77F87C5524AB4ED800185A3F /* DriverRepository.hpp */,
+				77F87C5724AB4F2000185A3F /* DriverFactory.cpp */,
+				77F87C5824AB4F2000185A3F /* DriverFactory.hpp */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		77F87C4724AB4E7C00185A3F /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C4824AB4E9000185A3F /* Car.cpp */,
+				77F87C4924AB4E9000185A3F /* Car.hpp */,
+				77F87C4B24AB4E9700185A3F /* CarFactory.cpp */,
+				77F87C4C24AB4E9700185A3F /* CarFactory.hpp */,
+				77F87C4E24AB4EA600185A3F /* CarRepository.cpp */,
+				77F87C4F24AB4EA600185A3F /* CarRepository.hpp */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		77F87C5A24AB4F2A00185A3F /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C5B24AB4F3400185A3F /* Time.cpp */,
+				77F87C5C24AB4F3400185A3F /* Time.hpp */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		77F87C5E24AB4F8600185A3F /* OrderAggregate */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C6E24AB4FDB00185A3F /* OrderAggregate.cpp */,
+				77F87C6F24AB4FDB00185A3F /* OrderAggregate.hpp */,
+			);
+			path = OrderAggregate;
+			sourceTree = "<group>";
+		};
+		77F87C7424AB502300185A3F /* OrderMemory */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C8124AB506B00185A3F /* OrderMemory.cpp */,
+				77F87C8224AB506B00185A3F /* OrderMemory.hpp */,
+			);
+			path = OrderMemory;
+			sourceTree = "<group>";
+		};
+		77F87C7524AB502A00185A3F /* CustomerMemory */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C7E24AB505F00185A3F /* CustomerMemory.cpp */,
+				77F87C7F24AB505F00185A3F /* CustomerMemory.hpp */,
+			);
+			path = CustomerMemory;
+			sourceTree = "<group>";
+		};
+		77F87C7624AB503000185A3F /* CarMemory */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C7B24AB505400185A3F /* CarMemory.cpp */,
+				77F87C7C24AB505400185A3F /* CarMemory.hpp */,
+			);
+			path = CarMemory;
+			sourceTree = "<group>";
+		};
+		77F87C7724AB503500185A3F /* DriverMemory */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C7824AB504A00185A3F /* DriverMemory.cpp */,
+				77F87C7924AB504A00185A3F /* DriverMemory.hpp */,
+			);
+			path = DriverMemory;
+			sourceTree = "<group>";
+		};
+		77F87C8924AB533800185A3F /* DDD-Taxi-UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C8A24AB533800185A3F /* DDD_Taxi_UnitTests.m */,
+				77F87C8C24AB533800185A3F /* Info.plist */,
+			);
+			path = "DDD-Taxi-UnitTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +336,23 @@
 			productReference = 77F87C2424AB194200185A3F /* DDD-Taxi */;
 			productType = "com.apple.product-type.tool";
 		};
+		77F87C8724AB533800185A3F /* DDD-Taxi-UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77F87C8D24AB533800185A3F /* Build configuration list for PBXNativeTarget "DDD-Taxi-UnitTests" */;
+			buildPhases = (
+				77F87C8424AB533800185A3F /* Sources */,
+				77F87C8524AB533800185A3F /* Frameworks */,
+				77F87C8624AB533800185A3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDD-Taxi-UnitTests";
+			productName = "DDD-Taxi-UnitTests";
+			productReference = 77F87C8824AB533800185A3F /* DDD-Taxi-UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +363,9 @@
 				ORGANIZATIONNAME = "Eduard Dzhumagaliev";
 				TargetAttributes = {
 					77F87C2324AB194200185A3F = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					77F87C8724AB533800185A3F = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -110,16 +384,59 @@
 			projectRoot = "";
 			targets = (
 				77F87C2324AB194200185A3F /* DDD-Taxi */,
+				77F87C8724AB533800185A3F /* DDD-Taxi-UnitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77F87C8624AB533800185A3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77F87C2024AB194200185A3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F87C6124AB4F9100185A3F /* Customer.cpp in Sources */,
+				77F87C5024AB4EA600185A3F /* CarRepository.cpp in Sources */,
+				77F87C3524AB1DCC00185A3F /* StdPresenter.cpp in Sources */,
+				77F87C8324AB506B00185A3F /* OrderMemory.cpp in Sources */,
+				77F87C5324AB4EC700185A3F /* Driver.cpp in Sources */,
 				77F87C2824AB194200185A3F /* main.cpp in Sources */,
+				77F87C6724AB4FAA00185A3F /* CustomerRepository.cpp in Sources */,
+				77F87C8024AB505F00185A3F /* CustomerMemory.cpp in Sources */,
+				77F87C3A24AB4E2400185A3F /* AvailableTime.cpp in Sources */,
+				77F87C5624AB4ED800185A3F /* DriverRepository.cpp in Sources */,
+				77F87C4324AB4E4D00185A3F /* RegisterCustomer.cpp in Sources */,
+				77F87C4D24AB4E9700185A3F /* CarFactory.cpp in Sources */,
+				77F87C7324AB4FE800185A3F /* OrderRepository.cpp in Sources */,
+				77F87C3724AB1E4100185A3F /* UseCase.cpp in Sources */,
+				77F87C3D24AB4E3000185A3F /* OrderTaxi.cpp in Sources */,
+				77F87C4A24AB4E9000185A3F /* Car.cpp in Sources */,
+				77F87C7A24AB504A00185A3F /* DriverMemory.cpp in Sources */,
+				77F87C4024AB4E3900185A3F /* GenerateCar.cpp in Sources */,
+				77F87C7024AB4FDB00185A3F /* OrderAggregate.cpp in Sources */,
+				77F87C7D24AB505400185A3F /* CarMemory.cpp in Sources */,
+				77F87C6D24AB4FC600185A3F /* OrderFactory.cpp in Sources */,
+				77F87C6A24AB4FBC00185A3F /* Order.cpp in Sources */,
+				77F87C5D24AB4F3400185A3F /* Time.cpp in Sources */,
+				77F87C6424AB4F9F00185A3F /* CustomerFactory.cpp in Sources */,
+				77F87C5924AB4F2000185A3F /* DriverFactory.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F87C8424AB533800185A3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F87C8B24AB533800185A3F /* DDD_Taxi_UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +572,40 @@
 			};
 			name = Release;
 		};
+		77F87C8E24AB533800185A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "DDD-Taxi-UnitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.DDD-Taxi-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77F87C8F24AB533800185A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "DDD-Taxi-UnitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.DDD-Taxi-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +623,15 @@
 			buildConfigurations = (
 				77F87C2C24AB194200185A3F /* Debug */,
 				77F87C2D24AB194200185A3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77F87C8D24AB533800185A3F /* Build configuration list for PBXNativeTarget "DDD-Taxi-UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F87C8E24AB533800185A3F /* Debug */,
+				77F87C8F24AB533800185A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
