@@ -13,13 +13,13 @@ void UseCase::setUseCaseStateDelegate(UseCaseStateDelegate * delegate) {
 }
 
 void UseCase::UseCaseStateDelegate::didFinishOperation(UseCase * onUseCase) {
-    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "has finished its operation." << endl;
+    cout << "(default protocol) " << onUseCase->getDescription() << ": " << "has finished its operation." << endl;
 }
 
 void UseCase::UseCaseStateDelegate::didFinishWithError(UseCase * onUseCase, string reason) {
-    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "has an error: " << reason << endl;
+    cout << "(default protocol) " << onUseCase->getDescription() << ": " << "has an error: " << reason << endl;
 }
 
 void UseCase::UseCaseStateDelegate::inProgress(UseCase * onUseCase) {
-    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "is in progress." << endl;
+    cout << "(default protocol) " << onUseCase->getDescription() << ": " << "is in progress." << endl;
 }

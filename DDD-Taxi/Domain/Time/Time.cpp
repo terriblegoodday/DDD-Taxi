@@ -9,9 +9,9 @@
 #include "Time.hpp"
 
 Time::Time(unsigned int begin, unsigned int end) {
-    if (begin <= end) {
-        hourBegin = begin % Settings::hoursInDay;
-        hourEnd = end % Settings::hoursInDay;
+    if (begin <= end && begin < Settings::hoursInDay && end < Settings::hoursInDay) {
+        hourBegin = begin;
+        hourEnd = end;
         return;
     }
     throw out_of_range("Incorrect time interval");
