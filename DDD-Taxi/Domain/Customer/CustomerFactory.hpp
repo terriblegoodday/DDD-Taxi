@@ -10,5 +10,12 @@
 #define CustomerFactory_hpp
 
 #include <stdio.h>
+#include "Customer.hpp"
+
+class CustomerFactory {
+    
+public:
+    Customer registerCustomer(string firstName, string lastName);
+};
 
 #endif /* CustomerFactory_hpp */

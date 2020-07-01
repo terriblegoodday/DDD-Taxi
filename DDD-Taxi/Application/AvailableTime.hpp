@@ -10,5 +10,24 @@
 #define AvailableTime_hpp
 
 #include <stdio.h>
+#include "UseCase.hpp"
+#include "Timetable.hpp"
+#include "Customer.hpp"
+#include "Order.hpp"
+#include "OrderRepository.hpp"
+#include "OrderAggregate.hpp"
+
+class AvailableTime: public UseCase {
+    Timetable * timetable = nullptr;
+    OrderRepository * orderRepository = nullptr;
+    Customer * customer = nullptr;
+    
+public:
+    string getDescription() override;
+    void execute() override;
+    
+    AvailableTime(OrderRepository * orderRepository,
+                  Customer * customer, Timetable * timetable);
+};
 
 #endif /* AvailableTime_hpp */

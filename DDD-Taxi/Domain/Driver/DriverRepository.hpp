@@ -10,5 +10,14 @@
 #define DriverRepository_hpp
 
 #include <stdio.h>
+#include "Driver.hpp"
+
+class DriverRepository {
+    
+public:
+    virtual Driver retrieve(DriverId byId) = 0;
+    virtual DriverId persist(DriverId & driver) = 0;
+};
 
 #endif /* DriverRepository_hpp */
+

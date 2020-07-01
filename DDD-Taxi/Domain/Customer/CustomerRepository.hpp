@@ -10,5 +10,13 @@
 #define CustomerRepository_hpp
 
 #include <stdio.h>
+#include "Customer.hpp"
+
+class CustomerRepository {
+    
+public:
+    virtual Customer retrieve(CustomerId byId) = 0;
+    virtual CustomerId persist(Customer & customer) = 0;
+};
 
 #endif /* CustomerRepository_hpp */

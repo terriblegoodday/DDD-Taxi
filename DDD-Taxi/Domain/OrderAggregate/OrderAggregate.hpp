@@ -10,5 +10,20 @@
 #define OrderAggregate_hpp
 
 #include <stdio.h>
+#include <vector>
+#include "Order.hpp"
+
+using namespace std;
+
+class OrderAggregate {
+    vector<Order> orders;
+    
+    OrderAggregate(vector<Order> fromOrders);
+    
+public:
+    vector<Order> & getOrders();
+    
+    friend class OrderRepository;
+};
 
 #endif /* OrderAggregate_hpp */

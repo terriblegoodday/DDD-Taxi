@@ -7,3 +7,16 @@
 //
 
 #include "GenerateCar.hpp"
+
+string GenerateCar::getDescription() {
+    return "GenerateCar";
+}
+
+void GenerateCar::execute() {
+    delegate->inProgress(this);
+    delegate->didFinishWithError(this, "not implemented yet");
+}
+
+GenerateCar::GenerateCar() {
+    
+}

@@ -11,4 +11,10 @@
 
 #include <stdio.h>
 
+struct Time {
+    // This is VO – value object
+    unsigned int hourBegin;
+    unsigned int hourEnd;
+};
+
 #endif /* Time_hpp */

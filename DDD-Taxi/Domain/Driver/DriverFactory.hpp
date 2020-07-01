@@ -10,5 +10,12 @@
 #define DriverFactory_hpp
 
 #include <stdio.h>
+#include "Driver.hpp"
+
+class DriverFactory {
+    
+public:
+    Driver registerDriver(string firstName, string lastName);
+};
 
 #endif /* DriverFactory_hpp */

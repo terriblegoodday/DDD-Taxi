@@ -10,5 +10,16 @@
 #define CarFactory_hpp
 
 #include <stdio.h>
+#include "Car.hpp"
+#include "DriverFactory.hpp"
+
+class CarFactory {
+
+public:
+    Car registerUberX();
+    Car registerUberXL();
+    Car registerUberSelect();
+    Car registerUberBlack();
+};
 
 #endif /* CarFactory_hpp */

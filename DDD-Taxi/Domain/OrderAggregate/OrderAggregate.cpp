@@ -7,3 +7,11 @@
 //
 
 #include "OrderAggregate.hpp"
+
+OrderAggregate::OrderAggregate(vector<Order> fromOrders) {
+    orders = fromOrders;
+}
+
+vector<Order> & OrderAggregate::getOrders() {
+    return orders;
+}

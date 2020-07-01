@@ -10,5 +10,15 @@
 #define OrderFactory_hpp
 
 #include <stdio.h>
+#include "Order.hpp"
+#include "Car.hpp"
+#include "Time.hpp"
+#include "Customer.hpp"
+
+class OrderFactory {
+    
+public:
+    Order registerOrder(Car & withCar, Customer & customer, Time & time);
+};
 
 #endif /* OrderFactory_hpp */

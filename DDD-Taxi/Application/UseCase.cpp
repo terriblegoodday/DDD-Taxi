@@ -1,9 +1,25 @@
 //
-//  UseCases.cpp
+//  UseCase.cpp
 //  DDD-Taxi
 //
-//  Created by Eduard Dzhumagaliev on 6/30/20.
+//  Created by Eduard Dzhumagaliev on 7/1/20.
 //  Copyright © 2020 Eduard Dzhumagaliev. All rights reserved.
 //
 
-#include <stdio.h>
+#include "UseCase.hpp"
+
+void UseCase::setUseCaseStateDelegate(UseCaseStateDelegate * delegate) {
+    this->delegate = delegate;
+}
+
+void UseCase::UseCaseStateDelegate::didFinishOperation(UseCase * onUseCase) {
+    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "has finished its operation." << endl;
+}
+
+void UseCase::UseCaseStateDelegate::didFinishWithError(UseCase * onUseCase, string reason) {
+    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "has an error." << endl;
+}
+
+void UseCase::UseCaseStateDelegate::inProgress(UseCase * onUseCase) {
+    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "is in progress." << endl;
+}

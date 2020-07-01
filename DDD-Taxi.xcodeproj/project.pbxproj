@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77C7C89224AC3A8000FE62E8 /* UseCase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77C7C89124AC3A8000FE62E8 /* UseCase.cpp */; };
+		77C7C89624AC4BDF00FE62E8 /* HashFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77C7C89424AC4BDF00FE62E8 /* HashFactory.cpp */; };
 		77F87C2824AB194200185A3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C2724AB194200185A3F /* main.cpp */; };
 		77F87C3524AB1DCC00185A3F /* StdPresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3324AB1DCC00185A3F /* StdPresenter.cpp */; };
-		77F87C3724AB1E4100185A3F /* UseCase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3624AB1E4100185A3F /* UseCase.cpp */; };
+		77F87C3724AB1E4100185A3F /* UseCase.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3624AB1E4100185A3F /* UseCase.hpp */; };
 		77F87C3A24AB4E2400185A3F /* AvailableTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3824AB4E2400185A3F /* AvailableTime.cpp */; };
 		77F87C3D24AB4E3000185A3F /* OrderTaxi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3B24AB4E3000185A3F /* OrderTaxi.cpp */; };
 		77F87C4024AB4E3900185A3F /* GenerateCar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C3E24AB4E3900185A3F /* GenerateCar.cpp */; };
@@ -33,6 +35,7 @@
 		77F87C8024AB505F00185A3F /* CustomerMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C7E24AB505F00185A3F /* CustomerMemory.cpp */; };
 		77F87C8324AB506B00185A3F /* OrderMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C8124AB506B00185A3F /* OrderMemory.cpp */; };
 		77F87C8B24AB533800185A3F /* DDD_Taxi_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C8A24AB533800185A3F /* DDD_Taxi_UnitTests.m */; };
+		77F87C9324AB542C00185A3F /* Timetable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77F87C9124AB542C00185A3F /* Timetable.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,12 +51,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		77C7C89024AC378100FE62E8 /* Settings.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Settings.hpp; sourceTree = "<group>"; };
+		77C7C89124AC3A8000FE62E8 /* UseCase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UseCase.cpp; sourceTree = "<group>"; };
+		77C7C89424AC4BDF00FE62E8 /* HashFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HashFactory.cpp; sourceTree = "<group>"; };
+		77C7C89524AC4BDF00FE62E8 /* HashFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashFactory.hpp; sourceTree = "<group>"; };
 		77F87C2424AB194200185A3F /* DDD-Taxi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DDD-Taxi"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F87C2724AB194200185A3F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		77F87C3224AB19A900185A3F /* Presenter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Presenter.hpp; sourceTree = "<group>"; };
 		77F87C3324AB1DCC00185A3F /* StdPresenter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StdPresenter.cpp; sourceTree = "<group>"; };
 		77F87C3424AB1DCC00185A3F /* StdPresenter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StdPresenter.hpp; sourceTree = "<group>"; };
-		77F87C3624AB1E4100185A3F /* UseCase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UseCase.cpp; sourceTree = "<group>"; };
+		77F87C3624AB1E4100185A3F /* UseCase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UseCase.hpp; sourceTree = "<group>"; };
 		77F87C3824AB4E2400185A3F /* AvailableTime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AvailableTime.cpp; sourceTree = "<group>"; };
 		77F87C3924AB4E2400185A3F /* AvailableTime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AvailableTime.hpp; sourceTree = "<group>"; };
 		77F87C3B24AB4E3000185A3F /* OrderTaxi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrderTaxi.cpp; sourceTree = "<group>"; };
@@ -101,6 +108,8 @@
 		77F87C8824AB533800185A3F /* DDD-Taxi-UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DDD-Taxi-UnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F87C8A24AB533800185A3F /* DDD_Taxi_UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDD_Taxi_UnitTests.m; sourceTree = "<group>"; };
 		77F87C8C24AB533800185A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F87C9124AB542C00185A3F /* Timetable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timetable.cpp; sourceTree = "<group>"; };
+		77F87C9224AB542C00185A3F /* Timetable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timetable.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +130,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77C7C89324AC4BCC00FE62E8 /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				77C7C89424AC4BDF00FE62E8 /* HashFactory.cpp */,
+				77C7C89524AC4BDF00FE62E8 /* HashFactory.hpp */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
+		77C7C89824AC6E8500FE62E8 /* InMemory */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C7724AB503500185A3F /* DriverMemory */,
+				77F87C7624AB503000185A3F /* CarMemory */,
+				77F87C7524AB502A00185A3F /* CustomerMemory */,
+				77F87C7424AB502300185A3F /* OrderMemory */,
+			);
+			path = InMemory;
+			sourceTree = "<group>";
+		};
 		77F87C1B24AB194200185A3F = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +171,7 @@
 		77F87C2624AB194200185A3F /* DDD-Taxi */ = {
 			isa = PBXGroup;
 			children = (
+				77C7C89024AC378100FE62E8 /* Settings.hpp */,
 				77F87C3124AB197900185A3F /* Infrastructure */,
 				77F87C3024AB196200185A3F /* Domain */,
 				77F87C2F24AB195900185A3F /* Application */,
@@ -164,7 +194,8 @@
 		77F87C2F24AB195900185A3F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				77F87C3624AB1E4100185A3F /* UseCase.cpp */,
+				77C7C89124AC3A8000FE62E8 /* UseCase.cpp */,
+				77F87C3624AB1E4100185A3F /* UseCase.hpp */,
 				77F87C3824AB4E2400185A3F /* AvailableTime.cpp */,
 				77F87C3924AB4E2400185A3F /* AvailableTime.hpp */,
 				77F87C3B24AB4E3000185A3F /* OrderTaxi.cpp */,
@@ -180,6 +211,8 @@
 		77F87C3024AB196200185A3F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				77C7C89324AC4BCC00FE62E8 /* Hash */,
+				77F87C9024AB541900185A3F /* Timetable */,
 				77F87C5E24AB4F8600185A3F /* OrderAggregate */,
 				77F87C5A24AB4F2A00185A3F /* Time */,
 				77F87C4724AB4E7C00185A3F /* Car */,
@@ -193,10 +226,7 @@
 		77F87C3124AB197900185A3F /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				77F87C7724AB503500185A3F /* DriverMemory */,
-				77F87C7624AB503000185A3F /* CarMemory */,
-				77F87C7524AB502A00185A3F /* CustomerMemory */,
-				77F87C7424AB502300185A3F /* OrderMemory */,
+				77C7C89824AC6E8500FE62E8 /* InMemory */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -316,6 +346,15 @@
 			path = "DDD-Taxi-UnitTests";
 			sourceTree = "<group>";
 		};
+		77F87C9024AB541900185A3F /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				77F87C9124AB542C00185A3F /* Timetable.cpp */,
+				77F87C9224AB542C00185A3F /* Timetable.hpp */,
+			);
+			path = Timetable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,6 +448,7 @@
 				77F87C3524AB1DCC00185A3F /* StdPresenter.cpp in Sources */,
 				77F87C8324AB506B00185A3F /* OrderMemory.cpp in Sources */,
 				77F87C5324AB4EC700185A3F /* Driver.cpp in Sources */,
+				77F87C9324AB542C00185A3F /* Timetable.cpp in Sources */,
 				77F87C2824AB194200185A3F /* main.cpp in Sources */,
 				77F87C6724AB4FAA00185A3F /* CustomerRepository.cpp in Sources */,
 				77F87C8024AB505F00185A3F /* CustomerMemory.cpp in Sources */,
@@ -417,8 +457,9 @@
 				77F87C4324AB4E4D00185A3F /* RegisterCustomer.cpp in Sources */,
 				77F87C4D24AB4E9700185A3F /* CarFactory.cpp in Sources */,
 				77F87C7324AB4FE800185A3F /* OrderRepository.cpp in Sources */,
-				77F87C3724AB1E4100185A3F /* UseCase.cpp in Sources */,
+				77F87C3724AB1E4100185A3F /* UseCase.hpp in Sources */,
 				77F87C3D24AB4E3000185A3F /* OrderTaxi.cpp in Sources */,
+				77C7C89224AC3A8000FE62E8 /* UseCase.cpp in Sources */,
 				77F87C4A24AB4E9000185A3F /* Car.cpp in Sources */,
 				77F87C7A24AB504A00185A3F /* DriverMemory.cpp in Sources */,
 				77F87C4024AB4E3900185A3F /* GenerateCar.cpp in Sources */,
@@ -426,6 +467,7 @@
 				77F87C7D24AB505400185A3F /* CarMemory.cpp in Sources */,
 				77F87C6D24AB4FC600185A3F /* OrderFactory.cpp in Sources */,
 				77F87C6A24AB4FBC00185A3F /* Order.cpp in Sources */,
+				77C7C89624AC4BDF00FE62E8 /* HashFactory.cpp in Sources */,
 				77F87C5D24AB4F3400185A3F /* Time.cpp in Sources */,
 				77F87C6424AB4F9F00185A3F /* CustomerFactory.cpp in Sources */,
 				77F87C5924AB4F2000185A3F /* DriverFactory.cpp in Sources */,

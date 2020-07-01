@@ -7,3 +7,7 @@
 //
 
 #include "OrderFactory.hpp"
+
+Order OrderFactory::registerOrder(Car & withCar, Customer & customer, Time & time) {
+    return Order(time, withCar, customer);
+}

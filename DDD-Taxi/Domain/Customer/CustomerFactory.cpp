@@ -7,3 +7,10 @@
 //
 
 #include "CustomerFactory.hpp"
+
+Customer CustomerFactory::registerCustomer(string firstName, string lastName) {
+    if (firstName != "" && lastName != "") return Customer(firstName, lastName);
+    else {
+        throw domain_error("First name and last name blank");
+    }
+}
