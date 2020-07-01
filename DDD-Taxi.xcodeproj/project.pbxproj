@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		771512E724ACA74B007EE445 /* TestDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 771512E524ACA74B007EE445 /* TestDelegate.cpp */; };
+		777E153A24ACC85E0071C242 /* UML (not quite accurate).png in Resources */ = {isa = PBXBuildFile; fileRef = 777E153924ACC85E0071C242 /* UML (not quite accurate).png */; };
 		77C7C89224AC3A8000FE62E8 /* UseCase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77C7C89124AC3A8000FE62E8 /* UseCase.cpp */; };
 		77C7C89624AC4BDF00FE62E8 /* HashFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77C7C89424AC4BDF00FE62E8 /* HashFactory.cpp */; };
 		77C7C89C24AC9D0B00FE62E8 /* DriverTestMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77C7C89A24AC9D0B00FE62E8 /* DriverTestMemory.cpp */; };
@@ -83,6 +84,7 @@
 /* Begin PBXFileReference section */
 		771512E524ACA74B007EE445 /* TestDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestDelegate.cpp; sourceTree = "<group>"; };
 		771512E624ACA74B007EE445 /* TestDelegate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestDelegate.hpp; sourceTree = "<group>"; };
+		777E153924ACC85E0071C242 /* UML (not quite accurate).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UML (not quite accurate).png"; sourceTree = "<group>"; };
 		77C7C89024AC378100FE62E8 /* Settings.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Settings.hpp; sourceTree = "<group>"; };
 		77C7C89124AC3A8000FE62E8 /* UseCase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UseCase.cpp; sourceTree = "<group>"; };
 		77C7C89424AC4BDF00FE62E8 /* HashFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HashFactory.cpp; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 		77F87C2624AB194200185A3F /* DDD-Taxi */ = {
 			isa = PBXGroup;
 			children = (
+				777E153924ACC85E0071C242 /* UML (not quite accurate).png */,
 				77C7C89024AC378100FE62E8 /* Settings.hpp */,
 				77F87C3124AB197900185A3F /* Infrastructure */,
 				77F87C3024AB196200185A3F /* Domain */,
@@ -491,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777E153A24ACC85E0071C242 /* UML (not quite accurate).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
