@@ -34,6 +34,8 @@ public:
     DriverId getUid() const;
     
     friend class DriverFactory;
+    
+    friend ostream & operator<<(ostream & destination, const Driver & source);
 };
 
 #endif /* Driver_hpp */

@@ -19,6 +19,7 @@
 using namespace std;
 
 class OrderMemory: public OrderRepository {
+protected:
     vector<Order> orders;
     
 public:

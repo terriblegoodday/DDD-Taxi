@@ -11,7 +11,7 @@
 Driver::Driver(string firstName, string lastName) {
     this->firstName = firstName;
     this->lastName = lastName;
-    this->uid = HashFactory::getHash(firstName + lastName);
+    this->uid = HashFactory::getHash(firstName + lastName, Settings::hashBoundary);
 }
 
 string Driver::getDescription() {
@@ -20,4 +20,9 @@ string Driver::getDescription() {
 
 DriverId Driver::getUid() const {
     return uid;
+}
+
+ostream & operator<<(ostream & destination, const Driver & source) {
+    destination << source.firstName << " " << source.lastName << " " << source.getUid() << endl;
+    return destination;
 }

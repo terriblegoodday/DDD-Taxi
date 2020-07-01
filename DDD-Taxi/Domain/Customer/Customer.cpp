@@ -30,3 +30,8 @@ void Customer::addToRating(unsigned int rating) {
 CustomerId Customer::getUid() const {
     return uid;
 }
+
+ostream & operator<<(ostream & destination, const Customer & source) {
+    destination << source.firstName << " " << source.lastName << " " << source.getUid() << endl;
+    return destination;
+}

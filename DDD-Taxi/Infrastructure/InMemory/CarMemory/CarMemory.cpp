@@ -33,3 +33,18 @@ CarId CarMemory::persist(Car & car) {
     cars.push_back(car);
     return car.getUid();
 }
+
+CarMemory::CarMemory() {
+    CarFactory carFactory;
+    Car c1 = carFactory.registerUberX();
+    Car c2 = carFactory.registerUberBlack();
+    Car c3 = carFactory.registerUberSelect();
+    
+    c1.setDriver(925);
+    c2.setDriver(1638);
+    c3.setDriver(1238);
+    
+    cars.push_back(c1);
+    cars.push_back(c2);
+    cars.push_back(c3);
+}

@@ -18,6 +18,8 @@ using namespace std;
 class STDPresenter: public Presenter {
 public:
     void start() override;
+    
+    STDPresenter(CarRepository * carRepository, DriverRepository * driverRepository, CustomerRepository * customerRepository, OrderRepository * orderRepository);
 };
 
 #endif /* StdPresenter_hpp */

@@ -14,6 +14,7 @@ string OrderTaxi::getDescription() {
 
 void OrderTaxi::execute() {
     try {
+        delegate->inProgress(this);
         Car car = carRepository->retrieveByTier(carTier);
         OrderFactory orderFactory = OrderFactory();
         Order order = orderFactory.registerOrder(car, customer, time);

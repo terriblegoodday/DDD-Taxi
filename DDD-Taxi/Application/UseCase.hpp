@@ -28,8 +28,9 @@ public:
     
 public:
     void setUseCaseStateDelegate(UseCaseStateDelegate * delegate);
-    UseCaseStateDelegate * delegate = nullptr;
     
+protected:
+    UseCaseStateDelegate * delegate = new UseCase::UseCaseStateDelegate();
     
 public:
     

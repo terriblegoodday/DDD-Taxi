@@ -33,7 +33,7 @@ class Order {
     
 public:
     Time getObjTime();
-    string getTime();
+    string getTime() const;
     string getCar();
     string getCustomer();
     string getDriver();
@@ -42,6 +42,7 @@ public:
     OrderId getUid() const;
     
     friend class OrderFactory;
+    friend ostream & operator<<(ostream & destination, const Order & source);
 };
 
 #endif /* Order_hpp */

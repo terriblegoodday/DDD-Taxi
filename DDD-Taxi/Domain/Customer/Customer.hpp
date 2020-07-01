@@ -37,6 +37,8 @@ public:
     void addToRating(unsigned int rating);
     
     friend class CustomerFactory;
+    
+    friend ostream & operator<<(ostream & destination, const Customer & source);
 };
 
 #endif /* Customer_hpp */

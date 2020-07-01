@@ -32,6 +32,10 @@ Driver * Car::getDriver() {
     return strongDriverLink;
 }
 
+void Car::setDriver(DriverId id) {
+    weakDriverLink = id;
+}
+
 void Car::setDriver(Driver & driver) {
     strongDriverLink = &driver;
     weakDriverLink = driver.getUid();
@@ -65,4 +69,9 @@ void Car::setTier(Tier tier) {
 
 Car::Tier Car::getTier() const {
 return tier;
+}
+
+ostream & operator<<(ostream & destination, const Car & source) {
+    destination << source.color << " " << source.brand << " " << source.plate << endl;
+    return destination;
 }

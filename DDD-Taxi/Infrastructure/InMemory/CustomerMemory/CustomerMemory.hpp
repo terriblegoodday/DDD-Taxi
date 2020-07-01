@@ -14,6 +14,7 @@
 #include <stdio.h>
 
 class CustomerMemory: public CustomerRepository {
+protected:
     vector<Customer> customers;
     
 public:

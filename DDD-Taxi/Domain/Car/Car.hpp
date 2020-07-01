@@ -56,9 +56,12 @@ public:
     Tier getTier() const;
     Driver * getDriver();
     void setDriver(Driver & driver);
+    void setDriver(DriverId byId);
     
     friend class CarFactory;
     friend class CarRepository;
+    
+    friend ostream & operator<<(ostream & destination, const Car & source);
 };
 
 #endif /* Car_hpp */

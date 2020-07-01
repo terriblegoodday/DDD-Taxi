@@ -19,6 +19,7 @@
 using namespace std;
 
 class DriverMemory: public DriverRepository {
+protected:
     vector<Driver> drivers;
     
 public:

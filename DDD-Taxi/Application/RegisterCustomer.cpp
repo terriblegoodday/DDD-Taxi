@@ -23,8 +23,14 @@ void RegisterCustomer::execute() {
         auto customerFactory = CustomerFactory();
         auto customer = customerFactory.registerCustomer(firstName, lastName);
         customerRepository->persist(customer);
+        this->customer = new Customer(customer);
         delegate->didFinishOperation(this);
     } catch (domain_error &e) {
         delegate->didFinishWithError(this, e.what());
     }
+}
+
+Customer RegisterCustomer::getCustomer() {
+    if (customer != nullptr) return *customer;
+    throw logic_error("Did not execute the Use Case before trying to get the Customer.");
 }

@@ -18,12 +18,15 @@
 using namespace std;
 
 class CarMemory: public CarRepository {
+protected:
     vector<Car> cars;
     
 public:
     Car retrieve(CarId byId) override;
     CarId persist(Car & car) override;
     Car retrieveByTier(Car::Tier tier) override;;
+    
+    CarMemory();
 };
 
 #endif /* CarMemory_hpp */

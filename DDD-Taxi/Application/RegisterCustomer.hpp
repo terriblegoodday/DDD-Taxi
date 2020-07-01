@@ -16,14 +16,18 @@
 #include "CustomerRepository.hpp"
 #include "CustomerFactory.hpp"
 
+using namespace std;
+
 class RegisterCustomer: public UseCase {
-    Customer getCustomer();
     string firstName;
     string lastName;
     
     CustomerRepository * customerRepository;
     
+    Customer * customer = nullptr;
+    
 public:
+    Customer getCustomer();
     string getDescription() override;
     void execute() override;
     

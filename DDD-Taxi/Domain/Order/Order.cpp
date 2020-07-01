@@ -20,6 +20,10 @@ Time Order::getObjTime() {
     return time;
 }
 
+string Order::getTime() const {
+    return to_string(time.hourBegin) + "–" + to_string(time.hourEnd);
+}
+
 OrderId Order::getUid() const {
     return uid;
 }
@@ -30,4 +34,9 @@ void Order::setUid(OrderId uid) {
 
 CustomerId Order::getCustomerUid() const {
     return weakCustomerLink;
+}
+
+ostream & operator<<(ostream & destination, const Order & source) {
+    destination << source.getCustomerUid() << " " << source.getTime() << endl;
+    return destination;
 }

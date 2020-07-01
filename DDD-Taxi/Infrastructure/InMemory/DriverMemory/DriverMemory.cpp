@@ -13,9 +13,9 @@ DriverMemory::DriverMemory() {
     Driver d1 = driverFactory.registerDriver("Will", "Smith");
     Driver d2 = driverFactory.registerDriver("Natasha", "Pogubnaya");
     Driver d3 = driverFactory.registerDriver("Stacie", "Wilton");
-    drivers[d1.getUid()] = d1;
-    drivers[d2.getUid()] = d2;
-    drivers[d3.getUid()] = d3;
+    drivers.push_back(d1);
+    drivers.push_back(d2);
+    drivers.push_back(d3);
 }
 
 Driver DriverMemory::retrieve(DriverId byId) {
