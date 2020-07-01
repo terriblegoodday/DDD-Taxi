@@ -19,3 +19,15 @@ Order::Order(Time time, Car & car, Customer & customer): strongCarLink(car) {
 Time Order::getObjTime() {
     return time;
 }
+
+OrderId Order::getUid() const {
+    return uid;
+}
+
+void Order::setUid(OrderId uid) {
+    this->uid = uid;
+}
+
+CustomerId Order::getCustomerUid() const {
+    return weakCustomerLink;
+}

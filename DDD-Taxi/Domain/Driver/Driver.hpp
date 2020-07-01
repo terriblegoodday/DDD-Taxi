@@ -31,7 +31,7 @@ class Driver {
     
 public:
     string getDescription();
-    DriverId getUid();
+    DriverId getUid() const;
     
     friend class DriverFactory;
 };

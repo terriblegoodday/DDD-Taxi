@@ -7,3 +7,7 @@
 //
 
 #include "StdPresenter.hpp"
+
+void STDPresenter::start() {
+    cout << "not implemented yet" << endl;
+}

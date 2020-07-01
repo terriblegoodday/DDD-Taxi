@@ -41,13 +41,19 @@ public:
         black
     };
     
+private:
+    Tier tier;
+    void setTier(Tier tier);
+    
+public:
     Car(string color, string brand, string plate);
     
-    CarId getUid();
+    CarId getUid() const;
     string getColor();
     string getBrand();
     string getPlate();
     string getDescription();
+    Tier getTier() const;
     Driver * getDriver();
     void setDriver(Driver & driver);
     

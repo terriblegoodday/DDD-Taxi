@@ -30,7 +30,7 @@ class Customer {
     Customer(string firstName, string lastName);
     
 public:
-    CustomerId getUid();
+    CustomerId getUid() const;
     string getRating();
     string getDescription();
     

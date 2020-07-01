@@ -16,7 +16,7 @@ class CarRepository {
     
 public:
     virtual Car retrieve(CarId byId) = 0;
-    virtual CarId persist(Car & car);
+    virtual CarId persist(Car & car) = 0;
     virtual Car retrieveByTier(Car::Tier tier) = 0;
 };
 

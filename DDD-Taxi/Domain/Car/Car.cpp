@@ -24,7 +24,7 @@ string Car::getDescription() {
     return color + " " + brand + " (" + plate + ")";
 }
 
-CarId Car::getUid() {
+CarId Car::getUid() const {
     return uid;
 }
 
@@ -32,8 +32,8 @@ Driver * Car::getDriver() {
     return strongDriverLink;
 }
 
-void setDriver(Driver & driver) {
-    strongDriverLink = driver;
+void Car::setDriver(Driver & driver) {
+    strongDriverLink = &driver;
     weakDriverLink = driver.getUid();
 }
 
@@ -58,3 +58,11 @@ Car::Car(string color, string brand, string plate) {
     setPlate(plate);
     this->uid = HashFactory::getHash(color + brand + plate, Settings::hashBoundary);
 };
+
+void Car::setTier(Tier tier) {
+    this->tier = tier;
+}
+
+Car::Tier Car::getTier() const {
+return tier;
+}

@@ -10,5 +10,14 @@
 #define StdPresenter_hpp
 
 #include <stdio.h>
+#include <iostream>
+#include "Presenter.hpp"
+
+using namespace std;
+
+class STDPresenter: public Presenter {
+public:
+    void start() override;
+};
 
 #endif /* StdPresenter_hpp */

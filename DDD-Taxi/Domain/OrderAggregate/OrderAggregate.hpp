@@ -18,12 +18,9 @@ using namespace std;
 class OrderAggregate {
     vector<Order> orders;
     
-    OrderAggregate(vector<Order> fromOrders);
-    
 public:
     vector<Order> & getOrders();
-    
-    friend class OrderRepository;
+    OrderAggregate(vector<Order> fromOrders);
 };
 
 #endif /* OrderAggregate_hpp */

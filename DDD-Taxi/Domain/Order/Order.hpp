@@ -29,6 +29,7 @@ class Order {
     CustomerId weakCustomerLink;
     
     Order(Time time, Car & car, Customer & customer);
+    void setUid(OrderId uid);
     
 public:
     Time getObjTime();
@@ -36,6 +37,9 @@ public:
     string getCar();
     string getCustomer();
     string getDriver();
+    
+    CustomerId getCustomerUid() const;
+    OrderId getUid() const;
     
     friend class OrderFactory;
 };

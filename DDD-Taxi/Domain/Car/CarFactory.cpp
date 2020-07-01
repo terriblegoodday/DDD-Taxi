@@ -16,6 +16,7 @@ Car CarFactory::registerUberX() {
     string plate = "AB " + to_string(plateNumber) + " CDE";
     
     Car car(color, brand, plate);
+    car.setTier(Car::Tier::x);
     
     return car;
 }
@@ -28,6 +29,7 @@ Car CarFactory::registerUberXL() {
     string plate = "XL " + to_string(plateNumber) + " CDE";
     
     Car car(color, brand, plate);
+    car.setTier(Car::xl);
     
     return car;
 }
@@ -40,6 +42,7 @@ Car CarFactory::registerUberSelect() {
     string plate = "SE " + to_string(plateNumber) + " CDE";
     
     Car car(color, brand, plate);
+    car.setTier(Car::select);
     
     return car;
 }
@@ -52,6 +55,7 @@ Car CarFactory::registerUberBlack() {
     string plate = "TS " + to_string(plateNumber) + " LOL";
     
     Car car(color, brand, plate);
+    car.setTier(Car::black);
     
     return car;
 }

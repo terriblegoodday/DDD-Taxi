@@ -18,6 +18,6 @@ string Driver::getDescription() {
     return firstName + " " + lastName + " | " + to_string(rating) + "(" + to_string(rateCount) + ")";
 }
 
-DriverId Driver::getUid() {
+DriverId Driver::getUid() const {
     return uid;
 }

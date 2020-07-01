@@ -27,6 +27,6 @@ void Customer::addToRating(unsigned int rating) {
     this->rating = (this->rating + (double)rating) / 2.0;
 }
 
-CustomerId Customer::getUid() {
+CustomerId Customer::getUid() const {
     return uid;
 }
