@@ -24,6 +24,8 @@ Car CarMemory::retrieveByTier(Car::Tier tier) {
         return car.getTier() == tier;
     });
     
+    if (filteredCars.size() == 0) throw out_of_range("No cars available");
+    
     auto s = filteredCars.size();
     auto random = rand() % s;
     return filteredCars[random];

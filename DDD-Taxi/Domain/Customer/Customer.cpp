@@ -12,6 +12,7 @@ Customer::Customer(string firstName, string lastName) {
     this->firstName = firstName;
     this->lastName = lastName;
     this->rating = 5;
+    this->rateCount = 1;
     this->uid  = HashFactory::getHash(firstName + lastName, Settings::hashBoundary);
 }
 
@@ -25,6 +26,7 @@ string Customer::getDescription() {
 
 void Customer::addToRating(unsigned int rating) {
     this->rating = (this->rating + (double)rating) / 2.0;
+    rateCount++;
 }
 
 CustomerId Customer::getUid() const {

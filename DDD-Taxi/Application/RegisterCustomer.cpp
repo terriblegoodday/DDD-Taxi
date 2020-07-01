@@ -20,9 +20,7 @@ RegisterCustomer::RegisterCustomer(CustomerRepository * customerRepository, stri
 void RegisterCustomer::execute() {
     delegate->inProgress(this);
     try {
-        auto customerFactory = CustomerFactory();
-        auto customer = customerFactory.registerCustomer(firstName, lastName);
-        customerRepository->persist(customer);
+        Customer customer = customerRepository->retrieveOrRegister(firstName, lastName);
         this->customer = new Customer(customer);
         delegate->didFinishOperation(this);
     } catch (domain_error &e) {
@@ -33,4 +31,8 @@ void RegisterCustomer::execute() {
 Customer RegisterCustomer::getCustomer() {
     if (customer != nullptr) return *customer;
     throw logic_error("Did not execute the Use Case before trying to get the Customer.");
+}
+
+RegisterCustomer::~RegisterCustomer() {
+    delete customer;
 }

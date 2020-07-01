@@ -27,6 +27,8 @@ class RegisterCustomer: public UseCase {
     Customer * customer = nullptr;
     
 public:
+    ~RegisterCustomer();
+    
     Customer getCustomer();
     string getDescription() override;
     void execute() override;

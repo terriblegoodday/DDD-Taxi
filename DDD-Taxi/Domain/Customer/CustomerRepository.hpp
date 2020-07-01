@@ -17,6 +17,8 @@ class CustomerRepository {
 public:
     virtual Customer retrieve(CustomerId byId) = 0;
     virtual CustomerId persist(Customer & customer) = 0;
+    virtual Customer retrieve(string firstName, string lastName) = 0;
+    virtual Customer retrieveOrRegister(string firstName, string lastName) = 0;
 };
 
 #endif /* CustomerRepository_hpp */

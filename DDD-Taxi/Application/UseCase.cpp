@@ -17,7 +17,7 @@ void UseCase::UseCaseStateDelegate::didFinishOperation(UseCase * onUseCase) {
 }
 
 void UseCase::UseCaseStateDelegate::didFinishWithError(UseCase * onUseCase, string reason) {
-    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "has an error." << endl;
+    cout << "(unimplemented protocol) " << onUseCase->getDescription() << ": " << "has an error: " << reason << endl;
 }
 
 void UseCase::UseCaseStateDelegate::inProgress(UseCase * onUseCase) {

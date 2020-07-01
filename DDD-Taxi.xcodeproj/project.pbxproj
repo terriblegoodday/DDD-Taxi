@@ -685,7 +685,7 @@
 		77F87C2C24AB194200185A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -696,7 +696,7 @@
 		77F87C2D24AB194200185A3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
 				ENABLE_HARDENED_RUNTIME = YES;

@@ -8,11 +8,10 @@
 
 #include "Order.hpp"
 
-Order::Order(Time time, Car & car, Customer & customer): strongCarLink(car) {
-    this->time = time;
+Order::Order(Time time, Car & car, Customer & customer): strongCarLink(car), time(time) {
     this->weakCarLink = car.getUid();
     this->weakCustomerLink = customer.getUid();
-    string toHash = to_string(time.hourBegin) + to_string(time.hourEnd) + to_string(car.getUid());
+    string toHash = to_string(time.begin()) + to_string(time.end()) + to_string(car.getUid());
     this->uid = HashFactory::getHash(toHash, Settings::hashBoundary);
 }
 
@@ -21,7 +20,7 @@ Time Order::getObjTime() {
 }
 
 string Order::getTime() const {
-    return to_string(time.hourBegin) + "–" + to_string(time.hourEnd);
+    return to_string(time.begin()) + "–" + to_string(time.end());
 }
 
 OrderId Order::getUid() const {

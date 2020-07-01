@@ -11,6 +11,7 @@
 
 #include "Customer.hpp"
 #include "CustomerRepository.hpp"
+#include "CustomerFactory.hpp"
 #include <stdio.h>
 
 class CustomerMemory: public CustomerRepository {
@@ -20,6 +21,8 @@ protected:
 public:
     Customer retrieve(CustomerId byId) override;
     CustomerId persist(Customer & customer) override;
+    Customer retrieve(string firstName, string lastName) override;
+    Customer retrieveOrRegister(string firstName, string lastName) override;
 };
 
 #endif /* CustomerMemory_hpp */

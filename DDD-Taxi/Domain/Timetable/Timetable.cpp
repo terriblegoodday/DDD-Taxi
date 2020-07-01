@@ -24,7 +24,7 @@ vector<bool> Timetable::getVector() {
 }
 
 void Timetable::addTime(Time time) {
-    for (int i = time.hourBegin; i <= time.hourEnd; i++) {
+    for (int i = time.begin(); i <= time.end(); i++) {
         availableHours[i % hoursPerDay] = true;
     }
 }

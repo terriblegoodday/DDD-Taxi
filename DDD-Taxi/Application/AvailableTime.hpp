@@ -23,6 +23,7 @@ class AvailableTime: public UseCase {
     Customer * customer = nullptr;
     
 public:
+    ~AvailableTime();
     string getDescription() override;
     void execute() override;
     

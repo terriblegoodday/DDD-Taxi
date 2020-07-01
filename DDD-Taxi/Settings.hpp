@@ -11,6 +11,7 @@
 
 namespace Settings {
     const int hashBoundary = 10128;
+    const int hoursInDay = 24;
 }
 
 #endif /* Settings_h */

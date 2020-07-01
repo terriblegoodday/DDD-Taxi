@@ -33,7 +33,6 @@ protected:
     UseCaseStateDelegate * delegate = new UseCase::UseCaseStateDelegate();
     
 public:
-    
     virtual string getDescription() = 0;
     virtual void execute() = 0;
 

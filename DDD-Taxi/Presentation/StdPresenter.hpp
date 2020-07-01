@@ -12,10 +12,15 @@
 #include <stdio.h>
 #include <iostream>
 #include "Presenter.hpp"
+#include "CustomerFactory.hpp"
+#include "RegisterCustomer.hpp"
+#include "OrderTaxi.hpp"
+#include "Time.hpp"
 
 using namespace std;
 
-class STDPresenter: public Presenter {
+class STDPresenter: public Presenter, public UseCase::UseCaseStateDelegate {
+    
 public:
     void start() override;
     

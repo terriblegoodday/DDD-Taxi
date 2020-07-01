@@ -10,11 +10,19 @@
 #define Time_hpp
 
 #include <stdio.h>
+#include <stdexcept>
+#include "Settings.hpp"
 
-struct Time {
-    // This is VO – value object
+using namespace std;
+
+class Time {
     unsigned int hourBegin;
     unsigned int hourEnd;
+    
+public:
+    unsigned int begin() const;
+    unsigned int end() const;
+    Time(unsigned int hourBegin, unsigned int hourEnd);
 };
 
 #endif /* Time_hpp */

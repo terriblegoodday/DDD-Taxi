@@ -18,6 +18,7 @@
 #include "Customer.hpp"
 #include "Car.hpp"
 #include "CarRepository.hpp"
+#include "CustomerRepository.hpp"
 
 using namespace std;
 
@@ -27,12 +28,16 @@ class OrderTaxi: public UseCase {
     Time time;
     CarRepository * carRepository = nullptr;
     OrderRepository * orderRepository = nullptr;
+    CustomerRepository * customerRepository = nullptr;
+    Car * car = nullptr;
     
 public:
+    ~OrderTaxi();
+    
     string getDescription() override;
     void execute() override;
     
-    OrderTaxi(CarRepository * carRepository, OrderRepository * orderRepository, Customer & customer, Time time, Car::Tier tier);
+    OrderTaxi(CarRepository * carRepository, OrderRepository * orderRepository, CustomerRepository * customerRepository, Customer & customer, Time time, Car::Tier tier);
 };
 
 #endif /* OrderTaxi_hpp */
